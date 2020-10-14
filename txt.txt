@@ -1,0 +1,55 @@
+// function addRow() {
+//     var empTab = document.getElementById('objDetTable');
+
+//     var rowCnt = empTab.rows.length;   // table row count.
+//     var tr = empTab.insertRow(rowCnt); // the table row.
+//     tr = empTab.insertRow(rowCnt);
+
+//     for (var c = 0; c < col.length; c++) {
+//         var td = document.createElement('td'); // table definition.
+//         td = tr.insertCell(c);
+
+//         if (c == 0) {
+//             // the first column.
+//             // add a button in every new row in the first column.
+//             var button = document.createElement('input');
+
+//             // set input attributes.
+//             button.setAttribute('type', 'button');
+//             button.setAttribute('value', 'Remove');
+
+//             // add button's 'onclick' event.
+//             button.setAttribute('onclick', 'removeRow(this)');
+
+//             td.appendChild(button);
+//         }
+//         else {
+//             // 2nd, 3rd and 4th column, will have textbox.
+//             var ele = document.createElement('input');
+//             ele.setAttribute('type', 'text');
+//             ele.setAttribute('value', '');
+
+//             td.appendChild(ele);
+//         }
+//     }
+// }
+// function removeRow(oButton) {
+//     var empTab = document.getElementById('objDetTable');
+//     empTab.deleteRow(oButton.parentNode.parentNode.rowIndex); // button -> td -> tr.
+// }
+// // function to extract and submit table data.
+// function submit() {
+//     var myTab = document.getElementById('objDetTable');
+//     var arrValues = new Array();
+
+//     // loop through each row of the table.
+//     for (row = 1; row < myTab.rows.length - 1; row++) {
+//         // loop through each cell in a row.
+//         for (c = 0; c < myTab.rows[row].cells.length; c++) {
+//             var element = myTab.rows.item(row).cells[c];
+//             if (element.childNodes[0].getAttribute('type') == 'text') {
+//                 arrValues.push("'" + element.childNodes[0].value + "'");
+//             }
+//         }
+//     }
+// }
